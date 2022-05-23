@@ -7,9 +7,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 - [install-elk.yml](Ansible/install-elk.yml)
 - [filebeat-config.yml](Ansible/filebeat-config.yml)
-- [filebeat-playbook.yml](filebeat-playbook.yml)
-- [metricbeat-config.yml](metricbeat-config.yml)
-- [metricbeat-playbook.yml](metricbeat-playbook.yml)
+- [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
+- [metricbeat-config.yml](Ansible/metricbeat-config.yml)
+- [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
 
 This document contains the following details:
 
