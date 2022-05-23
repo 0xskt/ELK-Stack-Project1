@@ -112,16 +112,16 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to **Kibana (Elk GUI interface)** to check that the installation worked as expected.
 
 > *Which file is the playbook?*
-- [filebeat-playbook.yml](URL)
-- [metricbeat-playbook.yml](URL)
+- [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
+- [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
 
 >  *Where do you copy it?*
 - /etc/ansible/roles/filebeat-playbook.yml
 - /etc/ansible/roles/metricbeat-playbook.yml
 
 > *Which file do you update to make Ansible run the playbook on a specific machine?*
-- [filebeat-config.yml](URL)
-- [metricbeat-config.yml](URL)
+- [filebeat-config.yml](Ansible/filebeat-config.yml)
+- [metricbeat-config.yml](Ansible/metricbeat-config.yml)
 
 > *How do I specify which machine to install the ELK server on versus which to install Filebeat on?*
 - All private IP addresses that need to be accessed need to be added to the hosts file in order for it to allow any connection. For example, you would want to include the private IP of Web-1 & Web-2 as well as ELK-1 to a specific group. From there, you would only need to change the 'hosts' from the playbook's header to specify which group you want to run the playbook on. For the purpose of this project, we ran the `install-elk.yml` playbook on the `ELK-1` machine and the `filebeat-playbook.yml` & `metricbeat-playbook.yml` on `Web-1-Japan` & `Web-2-Japan` machine.
