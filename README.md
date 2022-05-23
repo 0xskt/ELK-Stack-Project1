@@ -1,2 +1,2 @@
 # ELK-Stack-Project1
-My first project, creating and automating ELK Stack Deployment.
+My first project, creating an automated ELK Stack Deployment.
