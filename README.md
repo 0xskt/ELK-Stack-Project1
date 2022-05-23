@@ -124,7 +124,7 @@ SSH into the control node and follow the steps below:
 - [metricbeat-config.yml](URL)
 
 > *How do I specify which machine to install the ELK server on versus which to install Filebeat on?*
-- All private IP addresses that need to be accessed need to be added to the hosts file in order for it to allow any connection. For example, you would want to include the private IP of Web-1 & Web-2 as well as ELK-1 to a specific group. From there, you would only need to change the 'hosts' from the playbook's header to specify which group you want to run the playbook on. For the purpose of this project, we ran the 'install-elk.yml' playbook on the 'ELK-1' machine and the 'filebeat-playbook.yml' & 'metricbeat-playbook.yml' on 'Web-1-Japan' & 'Web-2-Japan' machine.
+- All private IP addresses that need to be accessed need to be added to the hosts file in order for it to allow any connection. For example, you would want to include the private IP of Web-1 & Web-2 as well as ELK-1 to a specific group. From there, you would only need to change the 'hosts' from the playbook's header to specify which group you want to run the playbook on. For the purpose of this project, we ran the `install-elk.yml` playbook on the `ELK-1` machine and the `filebeat-playbook.yml` & `metricbeat-playbook.yml` on `Web-1-Japan` & `Web-2-Japan` machine.
 
 > *Which URL do you navigate to in order to check that the ELK server is running?*
 - http://20.213.11.61:5601/app/kibana
