@@ -70,7 +70,7 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 > *What is the main advantage of automating configuration with Ansible?*
-- It very simple to setup and use. It's flexible and reusable.
+- It's very simple to setup and use. It's flexible and reusable.
 
 The playbook implements the following tasks:
 
